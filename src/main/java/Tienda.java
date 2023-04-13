@@ -1,9 +1,11 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Tienda {
 	private String direccion;
 	private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 	private ArrayList<Compra> compras = new ArrayList<Compra>();
+	private ArrayList<Dispositivo> dispositivos = new ArrayList<Dispositivo>();
 
 
 	public String getDireccion() {
@@ -20,15 +22,8 @@ public class Tienda {
 	}
 
 	public void obtenerInformacionDispositivo(Dispositivo dispositivo) {
-		for(Dispositivo dispositivo : this.dispositivos){
-			if(paciente.getRun().equals(run)){
-				System.out.println("Paciente encontrado");
-				return paciente;
-			}
-		}
+		System.out.println(dispositivo.toString());
 
-		System.out.println("Paciente no encontrado");
-		return null;;
 	}
 
 	public void realizarVenta(String fecha, Cliente cliente) {

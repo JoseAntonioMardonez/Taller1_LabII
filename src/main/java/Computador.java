@@ -47,6 +47,7 @@ public class Computador extends Dispositivo {
 		this.pantalla = pantalla;
 	}
 
+
 	public String getTipo() {
 		return "Computador";
 	}

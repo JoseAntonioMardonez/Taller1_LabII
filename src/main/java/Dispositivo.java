@@ -83,5 +83,9 @@ public abstract class Dispositivo {
 		this.stock = stock;
 	}
 
+	public String toString(){
+		return marca+", "+memoriaRAM+", "+almacenamiento+", "+procesador+", "+modelo+", "+anioFabricacion+", "+precio+", "+stock;
+	}
+
 	public abstract String getTipo();
 }
