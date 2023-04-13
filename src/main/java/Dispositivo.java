@@ -4,12 +4,19 @@ public abstract class Dispositivo {
 	private int almacenamiento;
 	private String procesador;
 	private String modelo;
-	private int añoFabricacion;
+	private int anioFabricacion;
 	private int precio;
 	private int stock;
 
-	public Dispositivo() {
-		throw new UnsupportedOperationException();
+	public Dispositivo(String marca, int memoriaRAM, int almacenamiento, String procesador, String modelo, int anioFabricacion, int precio, int stock) {
+		this.marca = marca;
+		this.memoriaRAM = memoriaRAM;
+		this.almacenamiento = almacenamiento;
+		this.procesador = procesador;
+		this.modelo = modelo;
+		this.anioFabricacion = anioFabricacion;
+		this.precio = precio;
+		this.stock = stock;
 	}
 
 	public String getMarca() {
@@ -52,12 +59,12 @@ public abstract class Dispositivo {
 		this.modelo = modelo;
 	}
 
-	public int getAñoFabricacion() {
-		return this.añoFabricacion;
+	public int getAnioFabricacion() {
+		return this.anioFabricacion;
 	}
 
-	public void setAñoFabricacion(int añoFabricacion) {
-		this.añoFabricacion = añoFabricacion;
+	public void setAnioFabricacion(int anioFabricacion) {
+		this.anioFabricacion = anioFabricacion;
 	}
 
 	public int getPrecio() {
@@ -76,7 +83,5 @@ public abstract class Dispositivo {
 		this.stock = stock;
 	}
 
-	public String getTipo() {
-		throw new UnsupportedOperationException();
-	}
+	public abstract String getTipo();
 }

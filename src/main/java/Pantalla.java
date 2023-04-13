@@ -3,8 +3,10 @@ public class Pantalla {
 	private String modelo;
 	private int anio;
 
-	public Pantalla() {
-		throw new UnsupportedOperationException();
+	public Pantalla(String marca, String modelo, int anio) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.anio = anio;
 	}
 
 	public String getMarca() {

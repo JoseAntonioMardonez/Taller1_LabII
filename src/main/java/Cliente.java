@@ -6,8 +6,13 @@ public class Cliente {
 	private String estadoCivil;
 	private String ciudad;
 
-	public Cliente() {
-		throw new UnsupportedOperationException();
+	public Cliente(String nombre, String apellido, String correoElectronico, int numeroContacto, String estadoCivil, String ciudad) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.correoElectronico = correoElectronico;
+		this.numeroContacto = numeroContacto;
+		this.estadoCivil = estadoCivil;
+		this.ciudad = ciudad;
 	}
 
 	public String getNombre() {

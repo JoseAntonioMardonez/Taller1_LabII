@@ -3,14 +3,15 @@ import java.util.ArrayList;
 public class Compra {
 	private String fechaCompra;
 	private Cliente cliente;
-	public Tienda unnamed_Tienda_;
-	public Cliente unnamed_Cliente_;
 	private ArrayList<Dispositivo> dispositivos = new ArrayList<Dispositivo>();
 
-	public Compra() {
-		throw new UnsupportedOperationException();
+	//Constructor
+	public Compra(String fechaCompra, Cliente cliente) {
+		this.fechaCompra = fechaCompra;
+		this.cliente = cliente;
 	}
 
+	//Metodos
 	public String getFechaCompra() {
 		return this.fechaCompra;
 	}
@@ -25,5 +26,9 @@ public class Compra {
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+
+	public void setDispositivos(dispositivo) {
+		;
 	}
 }
