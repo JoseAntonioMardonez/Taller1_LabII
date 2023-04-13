@@ -28,7 +28,7 @@ public class Compra {
 		this.cliente = cliente;
 	}
 
-	public void setDispositivos(dispositivo) {
+	/*public void setDispositivos(dispositivo) {
 		;
-	}
+	}*/
 }

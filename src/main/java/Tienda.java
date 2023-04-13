@@ -34,11 +34,11 @@ public class Tienda {
 
 	}
 
-	public void realizarVenta(String fecha, Cliente cliente) {
+	/*public void realizarVenta(String fecha, Cliente cliente) {
 		Compra compra = new Compra(fecha,cliente);
 		compra.setDispositivos();
 		this.compras.add(compra);
-	}
+	}*/
 	public void agregarDispositivo(Dispositivo dispositivo) {
 		this.dispositivos.add(dispositivo);
 		System.out.println("Dispositivo agregado");
